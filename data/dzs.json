@@ -1,0 +1,11 @@
+{
+      "intents": [
+            {
+                  "tag": "dequrvan disase",
+                  "patterns": [
+                        "wrist pain",
+                        "limitation of movement wrist joint"
+                  ]
+            }
+      ]
+}
