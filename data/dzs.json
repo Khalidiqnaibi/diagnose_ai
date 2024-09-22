@@ -38,9 +38,38 @@
                         "abdominal pain",
                         "abdominal rigidity",
                         "back pain andbruits",
-                        "Pain in tomy",
                         "Pain in tummy",
                         "Pain in stomach"
+                  ]
+            },
+            {
+                  "tag": "Diabetes",
+                  "patterns": [
+                        "Increased thirst (polydipsia) and dry mouth",
+                        "Frequent urination",
+                        "peeing a lot",
+                        "Fatigue",
+                        "Blurred vision",
+                        "Unexplained weight loss",
+                        "Numbness or tingling in your hands or feet",
+                        "Slow-healing sores or cuts",
+                        "Frequent skin or vaginal yeast infections"
+                  ]
+            },
+            {
+                  "tag": "Heart attack",
+                  "patterns": [
+                        "Chest pain",
+                        "angina",
+                        "Shortness of breath or trouble breathing",
+                        "insomnia",
+                        "Trouble sleeping",
+                        "Nausea or stomach discomfort",
+                        "Heart palpitations",
+                        "Anxiety or a feeling of impending doom",
+                        "Feeling lightheaded, dizzy or passing out",
+                        "chest hurts",
+                        "pain in chest"
                   ]
             }
       ]
