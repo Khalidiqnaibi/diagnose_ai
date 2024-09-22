@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 
-with (open("C:/Users/khaaf/Desktop/code/diagnose_ai/data/dzs.json",'r') )as f:
+with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'r') )as f:
     dzss=json.load(f)
             
 def adddzs(tag,pt):
@@ -17,7 +17,7 @@ def adddzs(tag,pt):
     if t:        
         dzss['intents'].append({"tag":tag,"patterns":[pt]})
         
-    with (open("C:/Users/khaaf/Desktop/code/diagnose_ai/data/dzs.json",'w')) as file:
+    with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'w')) as file:
         json.dump(dzss,file,indent=6)
 
 load_dotenv()

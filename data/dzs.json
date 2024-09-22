@@ -6,6 +6,29 @@
                         "wrist pain",
                         "limitation of movement wrist joint"
                   ]
+            },
+            {
+                  "tag": "Tennis elbow",
+                  "patterns": [
+                        "pain from the outside of the elbow",
+                        "outside the elbow hurts",
+                        "unable to shake hands",
+                        "unable to grip an object",
+                        "unable to hold an object",
+                        "unable to hold a cup",
+                        "unable to hold a coffee cup",
+                        "its hard to turn a door knob",
+                        "limitation of elbow movement",
+                        "limited elbow movement"
+                  ]
+            },
+            {
+                  "tag": "Carpal Tunnel Syndrome",
+                  "patterns": [
+                        "paraesthesia and weakness in most of the hand and near the elbow in the early morning",
+                        "numbness and weakness in most of her hand woke her up",
+                        "she woke up to paresthesia and pain in her index, middle, ring fingers and thumb woke her up from her sleep to shake her hand and hang it over the side of the bed to relief the pain"
+                  ]
             }
       ]
 }

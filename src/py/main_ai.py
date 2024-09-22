@@ -122,7 +122,7 @@ def get_type(comm_list, comm_json):
     return ''
 
 def run():
-    message = 'limitation of movement wrist and wrist pain'
+    message = 'wrist limitation of movement'
     total_probability = 0
     
     typclass = predict_class(message, commwords, commclasses, commmodel)
