@@ -13,7 +13,7 @@ from nltk.probability import FreqDist
 from nltk.classify import NaiveBayesClassifier
 from keras import models
 import tensorflow as tf
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer 
 from dotenv import load_dotenv
 import os
 
@@ -91,8 +91,8 @@ def bag_of_words(sentence, words_list):
 def predict_class(sentence, wordspkl, classespkl, model):
     bow = bag_of_words(sentence, wordspkl)
     bow = np.array([bow], dtype=np.float32)  # Ensure input is 2D and float32
-    print(f"Input shape for prediction: {bow.shape}")
-    print("Bow:", bow)
+    #print(f"Input shape for prediction: {bow.shape}")
+    #print("Bow:", bow)
     
     try:
         res = model.predict(bow, verbose=0)[0]
@@ -100,7 +100,7 @@ def predict_class(sentence, wordspkl, classespkl, model):
         print("Error during prediction:", e)
         return []
     
-    ERROR_THRESHOLD = 0.3
+    ERROR_THRESHOLD = 0.06
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     
@@ -121,15 +121,23 @@ def get_type(comm_list, comm_json):
             return tag
     return ''
 
+def prnt_typess(comm_list):
+    if not comm_list:
+        print("Warning: comm_list is empty.")
+    if len(comm_list)>1:
+        for intent in comm_list[1:]:
+            print(f"{intent['intent']} ==> probability: {float(intent['probability'])*100}%")
+
 def run():
-    message = 'wrist limitation of movement'
+    message = 'numbness in the hand'
     total_probability = 0
     
     typclass = predict_class(message, commwords, commclasses, commmodel)
     typ = get_type(typclass, comms)
     total_probability += float(typclass[0]['probability'])
-    print(typ)
-    print(f'probability: {total_probability*100}%')
+    print("====================================")
+    print(f'{typ} ==> probability: {total_probability*100}%')
+    prnt_typess(typclass)
 
 
 if __name__ == "__main__":

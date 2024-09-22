@@ -27,7 +27,20 @@
                   "patterns": [
                         "paraesthesia and weakness in most of the hand and near the elbow in the early morning",
                         "numbness and weakness in most of her hand woke her up",
-                        "she woke up to paresthesia and pain in her index, middle, ring fingers and thumb woke her up from her sleep to shake her hand and hang it over the side of the bed to relief the pain"
+                        "she woke up to paresthesia and pain in her index, middle, ring fingers and thumb woke her up from her sleep to shake her hand and hang it over the side of the bed to relief the pain",
+                        "numbness up to the elbow"
+                  ]
+            },
+            {
+                  "tag": "Abdominal aortic aneurysm",
+                  "patterns": [
+                        "abdominal mass",
+                        "abdominal pain",
+                        "abdominal rigidity",
+                        "back pain andbruits",
+                        "Pain in tomy",
+                        "Pain in tummy",
+                        "Pain in stomach"
                   ]
             }
       ]
