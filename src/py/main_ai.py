@@ -130,7 +130,7 @@ def prnt_typess(comm_list):
 
 def run():
     message = 'pain in chest'
-    total_probability = 0
+    total_probability = 0 
     
     typclass = predict_class(message, commwords, commclasses, commmodel)
     typ = get_type(typclass, comms)
