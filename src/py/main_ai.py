@@ -129,7 +129,7 @@ def prnt_typess(comm_list):
             print(f"{intent['intent']} ==> probability: {float(intent['probability'])*100}%")
 
 def run():
-    message = 'pain in chest'
+    message = 'i wake up to shake my hand'
     total_probability = 0 
     
     typclass = predict_class(message, commwords, commclasses, commmodel)

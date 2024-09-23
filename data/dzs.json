@@ -71,6 +71,613 @@
                         "chest hurts",
                         "pain in chest"
                   ]
+            },
+            {
+                  "tag": "Colles fracture",
+                  "patterns": [
+                        "Bruising",
+                        "Swelling in the wrist",
+                        "his wrist hangs at an odd angle",
+                        "Decreased range of wrist motion",
+                        "she can't rotate her wrist as far as usual",
+                        "unable to rotate their wrist as far as usual"
+                  ]
+            },
+            {
+                  "tag": "Ganglion cyst",
+                  "patterns": [
+                        "A bump beneath his skin",
+                        "a bump that grows larger over time and when joint area moves",
+                        "muscle pain",
+                        "tingling sensation",
+                        "inflammation"
+                  ]
+            },
+            {
+                  "tag": "Osteoarthritis",
+                  "patterns": [
+                        "Pain in a joint",
+                        "Stiffness",
+                        "Swelling near a joint",
+                        "Pain in the joint when moving",
+                        "A decreased range of motion",
+                        "unable to move the joint as far as usual",
+                        "Feeling like a joint isn't as strong or stable as it usually is",
+                        "A joint looking noticeably different than it used to",
+                        "joint deformity"
+                  ]
+            },
+            {
+                  "tag": "Gout",
+                  "patterns": [
+                        "Intense pain",
+                        "Discoloration or redness",
+                        "Stiffness",
+                        "Swelling",
+                        "Tenderness, even to a light touch",
+                        "Warmth",
+                        "a feeling like the joint is on fire"
+                  ]
+            },
+            {
+                  "tag": "Rheumatoid arthritis",
+                  "patterns": [
+                        "Pain in more than one joint",
+                        "Pain in several joints",
+                        "swelling in more than one joint",
+                        "swelling in several joints",
+                        "stiffness in several joints",
+                        "stiffness in more than one joint",
+                        "tenderness in more than one joint",
+                        "tenderness in several joints",
+                        "Stiffness in the morning",
+                        "Stiffness after sitting for long periods",
+                        "Pain and stiffness in the same joints on both sides of your body",
+                        "extreme tiredness",
+                        "Fatigue",
+                        "Weakness",
+                        "Fever"
+                  ]
+            },
+            {
+                  "tag": "Ankylosing spondylitis",
+                  "patterns": [
+                        "Lower back pain due to sacroiliitis",
+                        "painful inflammation in your sacroiliac joints",
+                        "Hip pain",
+                        "Pain in your butt",
+                        "Pain in his buttocks",
+                        "Neck pain",
+                        "Abdominal pain",
+                        "stomach pain",
+                        "Stiffness",
+                        "trouble moving your hips and lower back",
+                        "trouble moving her hips and lower back first thing in the morning",
+                        "trouble moving his hips and lower back after he has been resting in one position for a long time",
+                        "Fatigue",
+                        "feeling tired all the time",
+                        "Shortness of breath",
+                        "dyspnea",
+                        "Losing your appetite",
+                        "unexplained weight loss",
+                        "Diarrhea",
+                        "Skin rashes",
+                        "Vision problems"
+                  ]
+            },
+            {
+                  "tag": "Psoriatic arthritis",
+                  "patterns": [
+                        "hard or impossible to move and use your joints",
+                        "patches of psoriasis on your skin",
+                        "Joint pain",
+                        "Stiffness",
+                        "redness near your affected joints",
+                        "Discoloration",
+                        "Pain or tenderness where tendons and ligaments attach to your bones",
+                        "Pain or tenderness near his Achilles tendon",
+                        "Swelling in your fingers and toes",
+                        "dactylitis",
+                        "sausage fingers",
+                        "Psoriasis rash",
+                        "silver or gray scaly patches on your skin",
+                        "silver or gray scaly patches on your scalp, elbows, knees and lower back",
+                        "pitting on your fingernails",
+                        "Fatigue",
+                        "pitting on your toenails"
+                  ]
+            },
+            {
+                  "tag": "Juvenile idiopathic arthritis",
+                  "patterns": [
+                        "Pain in the joints",
+                        "swelling in the joints",
+                        "tenderness in the joints",
+                        "The joints feels warm",
+                        "Morning joint stiffness",
+                        "Limping gait",
+                        "not able to perform motor activities that they recently learned",
+                        "Fever",
+                        "Rash",
+                        "Weight loss",
+                        "Swollen lymph nodes",
+                        "Fatigue",
+                        "irritability",
+                        "Eye redness",
+                        "eye pain",
+                        "blurred vision"
+                  ]
+            },
+            {
+                  "tag": "Coronary artery spasm",
+                  "patterns": [
+                        "heart conditions",
+                        "Atherosclerosis",
+                        "when your arteries build up with plaque and become narrow",
+                        "High blood pressure",
+                        "High cholesterol",
+                        "Tobacco use",
+                        "Extreme stress",
+                        "Use of stimulants",
+                        "amphetamines",
+                        "cocaine"
+                  ]
+            },
+            {
+                  "tag": "Arrhythmia",
+                  "patterns": [
+                        "Heart palpitations",
+                        "Dizziness",
+                        "lightheadedness",
+                        "Fainting episodes",
+                        "Shortness of breath",
+                        "Chest discomfort",
+                        "Weakness",
+                        "fatigue"
+                  ]
+            },
+            {
+                  "tag": "Diabetes-related stroke",
+                  "patterns": [
+                        "trouble talking",
+                        "Dizziness",
+                        "problems with balance",
+                        "trouble walking",
+                        "Severe headache",
+                        "sudden headache",
+                        "Sudden confusion",
+                        "Trouble seeing",
+                        "double vision",
+                        "Weakness",
+                        "numbness on one side of the body",
+                        "numbness on one side of the face",
+                        "numbness on one arm or one leg"
+                  ]
+            },
+            {
+                  "tag": "Diabetes-related nephropathy",
+                  "patterns": [
+                        "Swelling in your face",
+                        "Swelling in his hands and feet",
+                        "edema",
+                        "vomiting",
+                        "Nausea",
+                        "fatigue",
+                        "Tiredness",
+                        "Dyspnea",
+                        "shortness of breath",
+                        "Loss of appetite",
+                        "bubbly pee",
+                        "Foamy pee",
+                        "Difficulty focusing",
+                        "confusion",
+                        "itchy skin",
+                        "Dry skin",
+                        "Muscle cramps",
+                        "Not needing to take as much insulin"
+                  ]
+            },
+            {
+                  "tag": "Fractured elbow",
+                  "patterns": [
+                        "cuts from bone fragments",
+                        "tenderness",
+                        "low range of motion",
+                        "Swelling of the elbow",
+                        "bruising of the elbow",
+                        "Extreme pain",
+                        "Stiffness in the elbow",
+                        "Stiffness around the elbow",
+                        "pop at the time of the injury",
+                        "Snap at the time of the injury",
+                        "Visible deformity",
+                        "Numbness",
+                        "weakness in the arm",
+                        "Numbness or weakness in the arm, wrist and hand",
+                        "Numbness in the hand",
+                        "Numbness in the wrist"
+                  ]
+            },
+            {
+                  "tag": "Fractured shoulder",
+                  "patterns": [
+                        "Shoulder pain",
+                        "Swelling",
+                        "Bruising",
+                        "discoloration",
+                        "Not being able to move your shoulder",
+                        "A deformity",
+                        "bump that's not usually on your body"
+                  ]
+            },
+            {
+                  "tag": "Humerus fractures",
+                  "patterns": [
+                        "Pain",
+                        "Swelling in the Humerus",
+                        "Pain in the Humerus",
+                        "Tenderness",
+                        "Inability to move your arm",
+                        "Bruising",
+                        "discoloration",
+                        "A deformity",
+                        "bump that's not usually on your body"
+                  ]
+            },
+            {
+                  "tag": "Pilon fractures",
+                  "patterns": [
+                        "pain in your lower leg and ankle",
+                        "bruising",
+                        "swelling",
+                        "skin blisters around your lower leg and ankle",
+                        "Not being able to put weight on your injured leg",
+                        "unable to put weight on your injured leg",
+                        "crooked or deformed ankle"
+                  ]
+            },
+            {
+                  "tag": "Facial fracture",
+                  "patterns": [
+                        "Facial Bruising",
+                        "Face Bruising",
+                        "face Swelling",
+                        "Facial Swelling",
+                        "tenderness",
+                        "Facial Pain",
+                        "Facial numbness",
+                        "Disfigurement"
+                  ]
+            },
+            {
+                  "tag": "Fractured eye sockets",
+                  "patterns": [
+                        "Blurred vision",
+                        "Double vision",
+                        "Bulging eyeballs",
+                        "Sunken eyeballs",
+                        "Difficulty moving your eyes up and down",
+                        "Difficulty moving your eyes back and forth"
+                  ]
+            },
+            {
+                  "tag": "Fractured nose",
+                  "patterns": [
+                        "Difficulty breathing through your nose",
+                        "Nosebleeds"
+                  ]
+            },
+            {
+                  "tag": "Fractured jaw",
+                  "patterns": [
+                        "Drooling",
+                        "Difficulty chewing",
+                        "unable to speak",
+                        "Pain when opening your mouth",
+                        "missing teeth",
+                        "broken teeth",
+                        "Loose teeth"
+                  ]
+            },
+            {
+                  "tag": "Barton fracture",
+                  "patterns": [
+                        "Bruising around your wrist",
+                        "Bump on your wrist",
+                        "Failure to move your wrist without pain",
+                        "tingling fingertips",
+                        "Numb fingertips",
+                        "Numbness in fingertips",
+                        "Swelling",
+                        "Wrist pain"
+                  ]
+            },
+            {
+                  "tag": "Chauffeur fracture",
+                  "patterns": [
+                        "Trauma to your wrist",
+                        "Blow to the back of your wrist",
+                        "Fall onto an outstretched hand",
+                        "Bruising",
+                        "Bruising in wrist",
+                        "Limited motion in the wrist",
+                        "Pain in the wrist",
+                        "Swelling",
+                        "Tenderness",
+                        "Unusual bend",
+                        "Unusual bump to the wrist",
+                        "Unusual twist to your wrist"
+                  ]
+            },
+            {
+                  "tag": "Smith fracture",
+                  "patterns": [
+                        "Wrist pain",
+                        "Swelling",
+                        "Tenderness",
+                        "Failure to move your wrist without pain",
+                        "Inability to move your wrist without pain",
+                        "discoloration around your wrist",
+                        "Bruising",
+                        "Unusual deformity",
+                        "bump on your wrist that's not usually there"
+                  ]
+            },
+            {
+                  "tag": "Scaphoid fracture",
+                  "patterns": [
+                        "Pain",
+                        "Swelling",
+                        "Tenderness",
+                        "Inability to move your wrist",
+                        "Bruising",
+                        "discoloration",
+                        "A deformity",
+                        "bump that's not usually on your wrist"
+                  ]
+            },
+            {
+                  "tag": "Pelvic fracture",
+                  "patterns": [
+                        "pain in your groin",
+                        "pain in your hip",
+                        "pain in your lower back.",
+                        "intense pain when walking",
+                        "intense pain when moving your legs",
+                        "numbness",
+                        "tingling in your groin area or legs",
+                        "pain in your abdomen",
+                        "difficult time peeing",
+                        "difficult time walking",
+                        "difficult time standing"
+                  ]
+            },
+            {
+                  "tag": "Hip fracture",
+                  "patterns": [
+                        "hip pain",
+                        "pain in the thigh",
+                        "pain in the outer hip",
+                        "pain in the pelvis",
+                        " pain in the groin area",
+                        "Pain radiate down buttock",
+                        "Pain radiate down leg",
+                        "sciatica",
+                        "pain in your knee",
+                        "Limited mobility",
+                        "can't stand or walk",
+                        "painful to walk",
+                        "painful to put weight on the leg",
+                        "bruise on your hip",
+                        "One leg appear shorter than the other",
+                        "hip looks out of position",
+                        "The hip looks twisted",
+                        "The hip looks rotated."
+                  ]
+            },
+            {
+                  "tag": "Femur fracture",
+                  "patterns": [
+                        "severe pain",
+                        "unable to put weight on your injured leg",
+                        "Pieces of your femur break through your skin",
+                        "bleeding",
+                        "Pieces of your femur push up against your skin",
+                        "Pieces of your femur push up against your skin but don't pierce your skin",
+                        "thigh is bruised",
+                        "Parts of your thigh are swollen",
+                        "injured leg shorter than uninjured leg",
+                        "injured leg turn out away from the body",
+                        "injured leg is rotated"
+                  ]
+            },
+            {
+                  "tag": "Patella fracture",
+                  "patterns": [
+                        "Pain",
+                        "Swelling",
+                        "Bruising",
+                        "Palpable patellar defect",
+                        "a change in your kneecap that you can feel through your skin",
+                        "Inability to straighten your leg",
+                        "Inability to raise your extended leg",
+                        "Inability to walk"
+                  ]
+            },
+            {
+                  "tag": "Fracture",
+                  "patterns": [
+                        "Pain on or around a bone",
+                        "body part looking noticeably different",
+                        "bent body part",
+                        "out of place",
+                        "crooked",
+                        "inability to move",
+                        "inability to use a body part",
+                        "unable to put pressure on the area",
+                        "Swelling",
+                        "Discoloration",
+                        "bruising",
+                        "Tenderness"
+                  ]
+            },
+            {
+                  "tag": "Calcaneal stress fracture",
+                  "patterns": [
+                        "heel pain",
+                        "trouble putting weight on your heel",
+                        "pain in only one spot of heel",
+                        "pain Increase when you try to stretch your foot",
+                        "pain Worsen the longer you stand",
+                        "Bruised",
+                        "Flushed",
+                        "redness",
+                        "Swollen",
+                        "Tenderness",
+                        "warm to the touch"
+                  ]
+            },
+            {
+                  "tag": "Fifth metatarsal fracture",
+                  "patterns": [
+                        "A blow to your foot",
+                        "excess pressure on the outside of your foot",
+                        "Repetitive overuse",
+                        "inversion injury",
+                        "Rolling your ankle and foot inward",
+                        "Bruising",
+                        "Pain or discomfort",
+                        "Swelling",
+                        "Tenderness"
+                  ]
+            },
+            {
+                  "tag": "Jones fracture",
+                  "patterns": [
+                        "Pain",
+                        "Pain in the foot",
+                        "Swelling",
+                        "Tenderness",
+                        "Difficulty walking",
+                        "Bruising",
+                        "discoloration",
+                        "bump that's not usually on your foot",
+                        "A deformity"
+                  ]
+            },
+            {
+                  "tag": "Lisfranc injury",
+                  "patterns": [
+                        "Pain in the top of the foot",
+                        "Swelling",
+                        "Swelling near the inside edge of the foot",
+                        "instep Swelling",
+                        "Bruising",
+                        "bottom of the foot Bruising",
+                        "You can't put much or any weight on your foot",
+                        "discomfort putting some weight on your foot"
+                  ]
+            },
+            {
+                  "tag": "Talus fracture",
+                  "patterns": [
+                        "severe ankle pain",
+                        "swelling",
+                        "Difficulty walking",
+                        "Inability to place weight on your foot",
+                        "Bruising",
+                        "Tenderness",
+                        "Fracture blisters",
+                        "fluid-filled blisters on your skin"
+                  ]
+            },
+            {
+                  "tag": "Trimalleolar fracture",
+                  "patterns": [
+                        "Sudden severe pain",
+                        "inability to put weight on your ankle",
+                        "unable to walk using your ankle",
+                        "Bruising on or around your ankle",
+                        "Swelling",
+                        "Swelling that can be severe"
+                  ]
+            },
+            {
+                  "tag": "Metabolic bone disease",
+                  "patterns": [
+                        "A decline in height",
+                        "getting shorter by at least an inch",
+                        "Broken bones",
+                        "Change of posture",
+                        "stooping",
+                        "bending forward",
+                        "Difficulty walking",
+                        "Lower back pain",
+                        "Muscle weakness",
+                        "Pain in your bones or hips",
+                        "Difficulty breathing",
+                        "smaller lung capacity",
+                        "compressed, or pinched, disks in your spine"
+                  ]
+            },
+            {
+                  "tag": "Osteogenesis imperfecta",
+                  "patterns": [
+                        "Brittle bones that break easily",
+                        "Bone deformities",
+                        "Bone pain",
+                        "Blue or gray sclerae",
+                        "Bruising easily",
+                        "Blue or gray instead of the whites of your eyes",
+                        "Difficulty breathing",
+                        "Hearing loss",
+                        "Loose joints",
+                        "Muscle weakness",
+                        "Curved spine",
+                        "kyphosis",
+                        "scoliosis",
+                        "Small stature",
+                        "Triangular face shape",
+                        "discolored teeth",
+                        "Weak, brittle or discolored teeth",
+                        "Teeth that don\u2019t align properly",
+                        "malocclusion",
+                        "Barrel-shaped rib cage"
+                  ]
+            },
+            {
+                  "tag": "Renal osteodystrophy",
+                  "patterns": [
+                        "Children with kidney disease",
+                        "growth delays"
+                  ]
+            },
+            {
+                  "tag": "Osteitis deformans",
+                  "patterns": [
+                        "Bone or joint pain",
+                        "Larger head size",
+                        "bowing of the arm or leg or curvature of the spine",
+                        "Bone deformations",
+                        "Bone fractures",
+                        "Headaches",
+                        "hearing loss"
+                  ]
+            },
+            {
+                  "tag": "Congenital rubella syndrome",
+                  "patterns": [
+                        "Low birth weight",
+                        "Multiple blue or purple circle-shaped marks or bumps in their skin",
+                        " a blueberry muffin rash",
+                        "Purple, red or brown spots and patches on their skin",
+                        "purpura",
+                        "Small head size",
+                        "microcephaly",
+                        "glaucoma",
+                        "Congenital cataracts",
+                        "Congenital heart disease"
+                  ]
             }
       ]
 }
