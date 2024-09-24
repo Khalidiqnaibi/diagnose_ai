@@ -3,11 +3,10 @@ from flask import sessions, sessions, Flask, jsonify, render_template, redirect,
 import os 
 from dotenv import load_dotenv
 
-
-with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'r') )as f:
-    dzss=json.load(f)
-            
+          
 def adddzs(tag,pt):
+    with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'r') )as f:
+        dzss=json.load(f)
     t=True
     for i in dzss['intents']:
         if tag==i['tag']:

@@ -678,6 +678,56 @@
                         "Congenital cataracts",
                         "Congenital heart disease"
                   ]
+            },
+            {
+                  "tag": "Complex lymphatic anomalies",
+                  "patterns": [
+                        "Chronic cough",
+                        "Shortness of breath",
+                        "dyspnea",
+                        "Wheezing",
+                        "Bone or joint pain",
+                        "Fractures",
+                        "Numbness",
+                        "Pinched nerves",
+                        "Abdominal distension",
+                        "abdominal pain",
+                        "Anemia",
+                        "fatigue",
+                        "Diarrhea",
+                        "Loss of appetite",
+                        "Nausea",
+                        "vomiting",
+                        "Unexplained weight loss",
+                        "Blood in urine",
+                        "hematuria",
+                        "Flank pain",
+                        "High blood pressure",
+                        "High blood pressure in children"
+                  ]
+            },
+            {
+                  "tag": "Polymyalgia rheumatica",
+                  "patterns": [
+                        "sudden onset of pain and stiffness around your large joints",
+                        "discomfort in your arms, back, butt and neck",
+                        "pain on both sides of your body",
+                        "trouble performing ordinary tasks",
+                        "Stiffness",
+                        "Stiffness lasting more than 30 minutes",
+                        "Stiffness in the morning or resting",
+                        "Weakness",
+                        "Fatigue",
+                        "Generally feeling ill",
+                        "Loss of appetite",
+                        "Weight loss",
+                        "Swelling of your hand",
+                        "wrist Swelling",
+                        "fever",
+                        "giant cell arteritis",
+                        "inflammation",
+                        "inflammation of large blood vessels"
+                  ]
             }
       ]
 }

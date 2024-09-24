@@ -89,11 +89,11 @@ model.add(layers.Dropout(0.5))
 model.add(layers.Dense(len(train_y[0]), activation='softmax'))
 
 # Compile the model
-sgd = optimizers.SGD(learning_rate=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = optimizers.SGD(learning_rate=0.001, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 # Train the model
-hist = model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
+hist = model.fit(train_x, train_y, epochs=1000, batch_size=5, verbose=1)
 
 # Save the model
 model.save("C:/Users/pc/Desktop/code/diagnose_ai/src/models/chatbotdzs.h5", hist)
