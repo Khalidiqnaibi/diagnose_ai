@@ -88,9 +88,9 @@ model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dropout(0.5))
 model.add(layers.Dense(len(train_y[0]), activation='softmax'))
 
-# Compile the model
-sgd = optimizers.SGD(learning_rate=0.001, decay=1e-6, momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+# Compile the model (Now with the magic of Adam 😎)
+adam = optimizers.Adam(learning_rate=0.001)
+model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
 
 # Train the model
 hist = model.fit(train_x, train_y, epochs=1000, batch_size=5, verbose=1)
