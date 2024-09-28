@@ -729,6 +729,69 @@
                         "inflammation",
                         "inflammation of large blood vessels"
                   ]
+            },
+            {
+                  "tag": "Shoulder arthritis",
+                  "patterns": [
+                        "Pain in your shoulder joint",
+                        "pain worsens when you lift heavy objects",
+                        "Your pain worsens when you exercise",
+                        "pain spread down your arm and elbow and wrist",
+                        "Stiffness",
+                        "loss of range of motion",
+                        "Grinding, clicking, popping or cracking in your shoulder joint",
+                        "Loss of cartilage",
+                        "unsmooth surface",
+                        "Loss of sleep",
+                        "unable to sleep",
+                        "insomnia",
+                        "sleeping in a recliner can provide pain relief at night"
+                  ]
+            },
+            {
+                  "tag": "Spondyloepiphyseal dysplasia congenita",
+                  "patterns": [
+                        "noticeably short trunk",
+                        "noticeably short neck and limbs",
+                        "Short stature",
+                        "Short height",
+                        "A broad, barrel-shaped chest",
+                        "breastbone or ribs sticking out",
+                        "Clubfoot",
+                        "Curved spine",
+                        "Clubfoot when the feet turn inward",
+                        "Clubfoot when the feet turn inward although hands and feet have average size and shape",
+                        "scoliosis",
+                        "sideways curve spine",
+                        "kyphosis",
+                        "outward curved spine",
+                        "lordosis",
+                        "inward curved spine",
+                        "combination of curvatures of the spine",
+                        "wide-set eyes",
+                        "flattened cheekbones",
+                        "cleft palate",
+                        "Flattened or unstable vertebrae",
+                        "Flattened or unstable bones in your spine",
+                        "Hip joints or knee joints that turn inward",
+                        "Decreased mobility",
+                        "Decreased movement",
+                        "Arthritis",
+                        "Hearing loss",
+                        "Joint stiffness",
+                        "pain and dislocations",
+                        "Sciatica",
+                        "pressure on a nerve in the lower back",
+                        "pressure on a nerve in the lower back, buttocks and back of your legs",
+                        "Trouble breathing",
+                        "Vision problems",
+                        "particularly severe nearsightedness and retinal detachment",
+                        "Waddling gait",
+                        "Waddling walk",
+                        "trouble learning to walk",
+                        "hypotonia",
+                        "Weak muscle tone"
+                  ]
             }
       ]
 }

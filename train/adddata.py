@@ -1,6 +1,5 @@
 import json 
-from flask import sessions, sessions, Flask, jsonify, render_template, redirect, session,redirect, request, session, url_for
-import os 
+from flask import Flask, render_template, redirect
 from dotenv import load_dotenv
 
           

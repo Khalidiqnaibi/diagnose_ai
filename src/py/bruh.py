@@ -1,5 +1,10 @@
-import tensorflow as tf
-import os
+import json
 
-os.environ['TF_ENABLE_ONEDNN_OPTS'] =  "0"
-print(tf.__version__)
+with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'r') )as f:
+    dzss=json.load(f)
+
+for i in dzss['intents']:
+    print(i['tag'])
+
+
+print(len(dzss['intents']))
