@@ -1,3 +1,115 @@
+import json
+import pickle
+import numpy as np
+import pyttsx3
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from keras import models
+import tensorflow as tf
+import os
+import time  # Added for measuring execution time
+from dotenv import load_dotenv
+
+#* based on Ash attempt num 4  
+
+#! optimized dignose_ai : big o ==> O(n+p+klogk) (p is constant and k is the sort of dzs)
+
+################
+##? Immortal ?##
+################
+
+load_dotenv()
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU for TensorFlow
+tf.get_logger().setLevel('ERROR')  # Minimize TensorFlow logging
+
+
+lemmatizer = WordNetLemmatizer()
+with open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json", 'r') as f:
+    comms = json.load(f)
+
+commwords = pickle.load(open('C:/Users/pc/Desktop/code/diagnose_ai/src/models/dzswords.pkl', 'rb'))
+commclasses = pickle.load(open('C:/Users/pc/Desktop/code/diagnose_ai/src/models/dzsclasses.pkl', 'rb'))
+commmodel = models.load_model('C:/Users/pc/Desktop/code/diagnose_ai/src/models/chatbotdzs.h5')
+
+# Preprocess word list for fast lookup
+word_index_map = {word: i for i, word in enumerate(commwords)}  # O(f) one-time setup
+
+# TTS setup
+engine = pyttsx3.init()
+engine.setProperty('voice', engine.getProperty('voices')[1].id)  # Select voice
+engine.setProperty('rate', 225)  # Speed of speech
+
+def clean_up_sentences(sentence):
+    """tokenize and lemmatize input sentence"""
+    sentence_words = word_tokenize(sentence)
+    return [lemmatizer.lemmatize(word) for word in sentence_words]
+
+def bag_of_words(sentence, word_index_map):
+    """convert sentence to bow representation using hashmap"""
+    sentence_words = clean_up_sentences(sentence)
+    bag = np.zeros(len(word_index_map), dtype=np.float32)
+    for word in sentence_words:
+        if word in word_index_map:
+            bag[word_index_map[word]] = 1.0
+    return bag
+
+def predict_class(sentence, model, word_index_map, classes):
+    """predict intent using trained model"""
+    bow = bag_of_words(sentence, word_index_map).reshape(1, -1)
+    res = model.predict(bow, verbose=0)[0]
+    ERROR_THRESHOLD = 0.06
+    results = [{'intent': classes[i], 'probability': r} for i, r in enumerate(res) if r > ERROR_THRESHOLD]
+    return sorted(results, key=lambda x: x['probability'], reverse=True)
+
+def get_type(intent_list, intents_data):
+    """get the main intent type"""
+    if not intent_list:
+        return ''
+    tag = intent_list[0]['intent']
+    for intent in intents_data['intents']:
+        if intent['tag'] == tag:
+            return tag
+    return ''
+
+def process_sentence(message):
+    """Process and print predictions for a single sentence"""
+    start_time = time.time()  # Start timer
+    predictions = predict_class(message, commmodel, word_index_map, commclasses)
+    elapsed_time = (time.time() - start_time) * 1000  # Convert to milliseconds
+
+    print("====================================")
+    print(f"Processing Time: {elapsed_time:.2f} ms")
+    if predictions:
+        main_diagnose = get_type(predictions, comms)
+        print(f"Main Diagnose: {main_diagnose} ==> Probability: {float(predictions[0]['probability'])*100:.2f}%")
+        if len(predictions) > 1:
+            for diagnose in predictions[1:]:
+                print(f"Other Diagnose: {diagnose['intent']} ==> Probability: {float(diagnose['probability'])*100:.2f}%")
+    else:
+        print("No intents matched the message.")
+
+def run():
+    """Run the chatbot and wait for user input after processing"""
+    # Process the hardcoded sentence
+    message = "my chest is ouchy and I feel a little dizzy and I can't sleep"
+    process_sentence(message)
+
+    boo= True
+    # Enter interactive mode for further sentences
+    while boo:
+        print("\nType a new sentence (or type 'exit' to quit):")
+        message = input("> ").strip()
+        if message.lower() == 'exit':
+            print("Exiting... Goodbye!")
+            boo = False
+        else:
+            process_sentence(message)
+
+if __name__ == "__main__":
+    run()
+
+
+'''
 # required modules
 import random
 import json
@@ -56,26 +168,6 @@ def preprocess(text):
     tokens = word_tokenize(text)
     tokens = [word for word in tokens if word not in stopwords.words('english')]
     return tokens
-
-def extract_features(text, fdist):
-    words = set(text)
-    features = {word: (word in words) for word in fdist.keys()}
-    return features
-
-def txtclassify(txt, json_data):
-    categories = ['story', 'command', 'question', 'conversation', 'facts']
-    training_data = [(pattern, intent['tag']) for intent in json_data['intents'] for pattern in intent['patterns']]
-    
-    processed_data = [(preprocess(text), category) for text, category in training_data]
-    all_words = [word for words, _ in processed_data for word in words]
-    fdist = FreqDist(all_words)
-    
-    feature_sets = [(extract_features(text, fdist), category) for (text, category) in processed_data]
-    classifier = NaiveBayesClassifier.train(feature_sets)
-    
-    processed_text = preprocess(txt)
-    features = extract_features(processed_text, fdist)
-    return classifier.classify(features)
 
 def bag_of_words(sentence, words_list):
     sentence_words = clean_up_sentences(sentence)
@@ -156,4 +248,3 @@ if __name__ == "__main__":
 #    print(typ, '\n', f'probability: {total_probability}%')
 #
 #print(results)
-'''
