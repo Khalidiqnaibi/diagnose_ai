@@ -1,10 +1,13 @@
 import json 
 from flask import Flask, render_template, redirect
 from dotenv import load_dotenv
+import os
+   
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(BASE_DIR, '../../data/dzs.json')
 
-          
 def adddzs(tag,pt):
-    with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'r') )as f:
+    with (open(data_path,'r') )as f:
         dzss=json.load(f)
     t=True
     for i in dzss['intents']:
@@ -15,7 +18,7 @@ def adddzs(tag,pt):
     if t:        
         dzss['intents'].append({"tag":tag,"patterns":[pt]})
         
-    with (open("C:/Users/pc/Desktop/code/diagnose_ai/data/dzs.json",'w')) as file:
+    with (open(data_path,'w')) as file:
         json.dump(dzss,file,indent=6)
 
 load_dotenv()
@@ -42,7 +45,5 @@ def adddssdzs(tag,pat):
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.1.29', port=5000, debug=False)
-     
-'''
-'''
+    app.run()#host='192.168.1.29', port=5000, debug=False)
+ 
